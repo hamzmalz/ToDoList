@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block head %}
+<title> My ToDo List</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align:center">Task master</h1>
+    {% if tasks|length < 1 %}
+    <h4 style="text-align: center;">There are no tasks created, Create one below!</h4>
+    {% else %}
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Task</th>
+            <th>Status</th>
+        </tr>
+
+    </table>
+    {% endif %}
+{% endblock %}
