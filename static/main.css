@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
     font-family: sans-serif;
+    background-color: aqua;
 }
 
 .content {
@@ -10,6 +11,8 @@ body, html {
 
 table, td, th {
     border: 1px solid #aaa;
+    background-color: aqua;
+    
 }
 
 table {
@@ -24,6 +27,8 @@ th {
 td {
     text-align: center;
     padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
 
 .form {
@@ -33,4 +38,6 @@ td {
 
 #content {
     width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
