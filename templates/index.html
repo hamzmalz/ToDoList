@@ -9,13 +9,16 @@
     {% if tasks|length < 1 %}
     <h4 style="text-align: center">There are no tasks. Create one below!</h4>
     {% else %}
-    <table>
-        <tr>
-            <th>Date</th>
-            <th>Task</th>
-            <th>Status</th>
-        </tr>
-        {% for task in tasks %}
+    <table class="table table-sm table-bordered table-striped table-hover table-responsive-sm">
+        <thead class="thead-dark">
+            <tr>
+                <th>Date</th>
+                <th>Task</th>
+                <th>Status</th>
+            </tr>
+        </thead> 
+        <tbody>
+            {% for task in tasks %}
             <tr>
                 <td>{{ task.date_created.time()|dt }}</td>
                 <td>{{ task.content }}</td>
@@ -28,7 +31,11 @@
                
                 
             </tr>
-        {% endfor %}
+            {% endfor %}
+
+        </tbody>
+        
+        
     </table>
     {% endif %}
 
